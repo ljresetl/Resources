@@ -1,0 +1,764 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.02em;
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  color: #717680;
+}
+
+.dashboard {
+  display: none;
+}
+
+.header,
+section {
+  padding: 16px 0px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 390px;
+  padding: 0px 17px;
+  justify-content: space-between;
+}
+
+/* хеадер */
+
+.social-icon {
+  fill: #5b4bdb;
+}
+
+.topbar_button {
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+}
+
+.social-icon-menu {
+  stroke-width: 1.61px;
+  stroke: #1f2937;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.button-button-img {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon-menu-b {
+  stroke-width: 2px;
+  stroke: #000;
+}
+
+.topbar-button-2 {
+  background-color: transparent;
+}
+
+.my {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.h_p {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings_h {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px; /* місце для стрілки */
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 29px;
+  color: #1f2937;
+  font-family: "Nunito", sans-serif;
+  width: 120px;
+}
+
+.settings_h::before {
+  content: "<"; /* можна замінити на "←" для красивішої стрілки */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #65676a;
+}
+
+.settings_p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+}
+
+.left_settings_h {
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.form_group_zone_one {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left_settings_label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+}
+
+.form-group-zone {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #717680;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+  width: 350px;
+  height: 50px;
+  background-color: #f9fafb;
+}
+
+.form_group_zone_one_all {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+/* стилі для стрілочки селекту */
+.form_group_zone,
+.form_group_select {
+  appearance: none; /* прибирає стандартну стрілку */
+  -webkit-appearance: none; /* для Safari/Chrome */
+  -moz-appearance: none; /* для Firefox */
+
+  background: #f9fafb url("./images/Arrow_Down.svg") no-repeat right 20px center;
+  background-size: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 40px 16px 20px; /* відступ справа під стрілку */
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  /* color: #1f2937; */
+  cursor: pointer;
+}
+/* стилі для стрілочки селекту кінець */
+
+.form_group_button_svg {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.form_group_button {
+  background-color: transparent;
+}
+
+.form_group_svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form_inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_group_select {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  color: #1f2937;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  border: 1px solid #6c63ff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  width: 184px;
+  height: 50px;
+  background-color: #f9fafb;
+}
+
+/* Notification початок */
+
+.section_title {
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  margin-bottom: 38px;
+  margin-top: 20px;
+}
+
+.label_text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+}
+
+.toggle_div_all {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #f9fafb;
+  border-radius: 34px;
+  transition: 0.3s;
+  border: 1px solid #e5e7eb;
+}
+
+/* початковий стан — сірий */
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #ccc; /* сірий */
+  transition: 0.3s;
+}
+
+/* коли включено — синій */
+.toggle input:checked + .slider::before {
+  background-color: #7b5cff; /* синій */
+  transform: translate(20px, -50%);
+}
+
+/* коли включено */
+.toggle input:checked + .slider {
+  background-color: #f9fafb; /* фон треку */
+}
+
+.toggle input:checked + .slider::before {
+  transform: translate(20px, -50%); /* вправо + по центру */
+}
+
+.right_settings_label_one {
+  margin-bottom: 16px;
+}
+
+.label_text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #717680;
+  transition: color 0.3s;
+}
+
+/* Коли input включений, змінюємо колір тексту */
+.toggle input:checked ~ .label_text {
+  color: #1f2937;
+}
+/* Notification кінець */
+
+/* <!-- Password --> початок */
+
+.section_title_password {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  width: 120px;
+}
+
+.password_settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.right_settings_label_one {
+  margin-bottom: 0;
+}
+
+.input_group {
+  position: relative;
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+
+.input_group svg {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #9ca3af; /* сірий для іконки */
+  pointer-events: none; /* щоб не заважала клікам */
+}
+
+.input_group input {
+  width: 320px;
+  /* width: 100%; */
+  height: 50px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0 16px 0 44px; /* відступ зліва під іконку */
+  background-color: #f9fafb;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.input_icon {
+  margin-right: 10px;
+  fill: #666;
+}
+/* <!-- Password --> кінець */
+
+/* <!-- Personal Info початок --> */
+.personal_info-h {
+  font-weight: 500;
+  font-size: 22px;
+  text-align: left;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+}
+
+.personal_info_label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+}
+
+.personal_info_input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 358px;
+  height: 44px;
+}
+
+.form_group.upload_box {
+  width: 90%;
+  height: 126px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: #f9fafb;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form_group.upload_box:hover {
+  border-color: #6c63ff;
+  background-color: #f0f0ff;
+}
+
+.upload_icon {
+  width: 32px; /* можна змінити розмір іконки */
+  height: 32px;
+  object-fit: contain;
+}
+
+.personal_info_p_box {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #717680;
+  font-family: "Inter", sans-serif;
+  text-align: center; /* текст по центру */
+  margin: 0;
+  width: 280px;
+  margin-top: 12px;
+}
+
+.personal_info-p_strong {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #6c63ff;
+  font-family: "Inter", sans-serif;
+}
+
+.upload_icon-footer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  padding: 24px 0px 20px 0px;
+}
+
+.upload_icon_footer {
+  width: 64px;
+  height: 64px;
+}
+
+.topbar_button_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #e5e7eb;
+  border-radius: 28px;
+  width: 40px;
+  height: 40px;
+  background-color: #e5e7eb;
+}
+
+.social-icon-menu_footer {
+  fill: transparent;
+  stroke-width: 1.67px;
+  stroke: #717680;
+}
+/* <!-- Personal Info кінець --> */
+
+/* кнопки початок */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button_footer {
+  border: 1.75px solid #6c63ff;
+  border-radius: 4px;
+  padding: 6px 22px;
+  width: 164px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: #1f2937;
+}
+
+.button_footer:hover {
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  color: #f9fafb;
+  border-radius: 4px;
+  padding: 6px 22px;
+  width: 164px;
+  height: 38px;
+  background-color: #6c63ff;
+}
+/* кнопки кінець */
+
+/* Базовий стиль для всіх потрібних заголовків */
+.settings_h,
+.section_title,
+.section_title_password,
+.personal_info-h {
+  position: relative;
+  display: inline-block; /* щоб underline був під словом */
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+/* Псевдоелемент для синьої "стрілки" */
+.settings_h::after,
+.section_title::after,
+.section_title_password::after,
+.personal_info-h::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* відстань під словом */
+  width: 100%;
+  height: 3px;
+  background: #3b82f6; /* синій колір (tailwind blue-500) */
+  border-radius: 2px;
+}
+
+/* ---------- Планшет ---------- */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 24px;
+  }
+
+  .my {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h_p {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    min-width: 720px;
+    margin-right: auto;
+    /* padding: 15px; */
+  }
+
+  .left_right {
+    display: flex;
+    width: 720px;
+  }
+
+  .notification_password {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .password_settings {
+    width: 350px;
+  }
+
+  .input_group input {
+    width: 70%;
+  }
+
+  .form_inline {
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    /* margin-bottom: 20px; */
+  }
+
+  .left_settings {
+    width: 373px;
+  }
+
+  .left_settings {
+    padding: 10px;
+  }
+
+  .form_group_all_one {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .img_and_upload {
+    display: flex;
+    gap: 20px;
+  }
+
+  .personal_info_input {
+    width: 320px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end; /* вирівнює вправо */
+    gap: 20px;
+    width: 100%; /* щоб займати всю ширину контейнера */
+  }
+
+  .personal_info-h {
+    text-align: left;
+  }
+
+  .section_title {
+    margin-top: 0px;
+  }
+}
+
+/* ---------- Десктоп ---------- */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 32px;
+  }
+
+  .settings_h {
+    font-weight: 500;
+  }
+
+  .settings_p {
+    font-size: 16px;
+  }
+
+  .form_group_zone {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: #717680;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* margin-bottom: 20px; */
+  }
+
+  .left_right {
+    justify-content: center;
+    gap: 24px;
+    min-width: 1140px;
+  }
+
+  .left_settings {
+    width: 570px;
+    /* padding: 15px; */
+    padding: 0px;
+  }
+
+  .notification_password {
+    width: 570px;
+    padding: 15px;
+    padding: 0px;
+  }
+
+  .input_group input {
+    width: 100%;
+  }
+
+  .right_input {
+    width: 400px;
+  }
+
+  .form_inline {
+    justify-content: flex-start;
+  }
+
+  .form_group_all_one {
+    min-width: 1140px;
+    /* padding: 15px; */
+  }
+
+  /* .personal_info-h {
+    padding: 15px;
+  } */
+
+  .settings_container {
+    width: 570px;
+    /* padding: 15px; */
+  }
+
+  .personal_info_input {
+    min-width: 514px;
+  }
+
+  .upload_icon-footer {
+    padding: 0px;
+  }
+
+  .form_group.upload_box {
+    width: 80%;
+  }
+
+  .settings_h {
+    padding-left: 0; /* прибираємо відступ */
+  }
+
+  .settings_h::before {
+    content: none;
+  }
+
+  .topbar_button_2 {
+    display: none;
+  }
+}
