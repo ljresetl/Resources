@@ -436,3 +436,50 @@ section {
 }
 
 /* нижня частина кінець */
+
+/* таблиця початок */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.styled-table thead tr {
+  background-color: #e5e7eb; /* світлий сірий */
+  color: #1f2937; /* темний текст */
+  font-weight: 600;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 16px;
+}
+
+.styled-table tbody tr {
+  background-color: #f9fafb; /* чергування рядків */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #dbeafe; /* легкий hover */
+}
+
+.styled-table td:last-child {
+  position: relative;
+  text-align: left;
+}
+
+.styled-table td:last-child {
+  max-width: 200px; /* ширина колонки Note */
+  white-space: nowrap; /* не переносити текст */
+  overflow: hidden; /* обрізати зайве */
+  text-overflow: ellipsis; /* додати три крапки */
+}
+
+/* таблиця кінець */
