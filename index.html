@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- Ліва панель -->
-    <div class="dashboard">
+    <!-- <div class="dashboard">
       <aside class="sidebar">
         <div class="logo">
           <a href="" class="mobile-menu-social-link">
@@ -70,25 +70,25 @@
           </a>
         </div>
       </aside>
-    </div>
+    </div> -->
     <!-- хеадер початок -->
     <header class="header">
       <div class="container">
         <div class="logo">
-          <a href="" class="mobile-menu-social-link">
-            <svg class="social-icon" width="121" height="42">
+          <a href="" class="mobile_menu_social_link">
+            <svg class="social_icon" width="121" height="42">
               <use href="./images/icons.svg#icon-1"></use>
             </svg>
           </a>
         </div>
-        <div class="button-button-img">
+        <div class="button_button_img">
           <button class="topbar_button">
-            <svg class="social-icon-menu" width="16" height="16">
+            <svg class="social_icon_menu" width="16" height="16">
               <use href="./images/icons.svg#icon-Group-2"></use>
             </svg>
           </button>
           <button class="topbar_button">
-            <svg class="social-icon-menu" width="16" height="16">
+            <svg class="social_icon_menu" width="16" height="16">
               <use href="./images/icons.svg#icon-Vector-4"></use>
             </svg>
           </button>
@@ -100,8 +100,8 @@
             width="16"
             height="16"
           />
-          <button class="topbar_button topbar_button_2">
-            <svg class="social-icon-menu-b" width="24" height="24">
+          <button class="topbar_button_2">
+            <svg class="social_icon_menu_b" width="24" height="24">
               <use href="./images/icons.svg#icon-Vector-6"></use>
             </svg>
           </button>
@@ -112,191 +112,141 @@
 
     <!-- Main Content -->
     <main class="content">
-      <section class="settings">
+      <section class="resources">
         <div class="container my">
-          <div class="h_p">
-            <a href="#" class="settings_h">Settings</a>
-            <!-- <h2 class="settings_h">Settings</h2> -->
-            <p class="settings_p">
-              Update personal details, adjust notifications, and choose your
-              language settings
-            </p>
-          </div>
-          <div class="left_right">
-            <!-- Ліва колонка -->
-            <div class="settings_container">
-              <div class="left_settings">
-                <h3 class="left_settings_h">General</h3>
-                <div class="form_group_all">
-                  <div class="form_group_zone_one_all">
-                    <div class="form_group_zone_one">
-                      <label class="left_settings_label">Language</label>
-                      <select class="form_group_zone">
-                        <option>English (Default)</option>
-                        <option>Spanish</option>
-                        <option>French</option>
-                      </select>
-                    </div>
-                    <div class="form_group_zone_one">
-                      <label class="left_settings_label">Timezone</label>
-                      <select class="form_group_zone">
-                        <option>United States</option>
-                        <option>Europe</option>
-                        <option>Asia</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="form_inline">
-                    <div class="form_group">
-                      <div class="form_group_button_svg">
-                        <label
-                          class="left_settings_label left_settings_label_one"
-                          >Date Format</label
-                        >
-                        <button class="form_group_button">
-                          <svg class="form_group_svg" width="20" height="20">
-                            <use href="./images/icons.svg#icon-Info-icon"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <select class="form_group_select">
-                        <option>MM/DD/YYYY</option>
-                        <option>DD/MM/YYYY</option>
-                      </select>
-                    </div>
-                    <div class="form_group">
-                      <div class="form_group_button_svg">
-                        <label class="left_settings_label">Date Format</label>
-                        <button class="form_group_button">
-                          <svg class="form_group_svg" width="20" height="20">
-                            <use href="./images/icons.svg#icon-Info-icon"></use>
-                          </svg>
-                        </button>
-                      </div>
-                      <select class="form_group_select">
-                        <option>12 Hours</option>
-                        <option>24 Hours</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="resources_a_search">
+            <a href="#" class="resources_a">Resources</a>
+            <div class="resources_search">
+              <svg class="resources_search-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-Vector-8"></use>
+              </svg>
+              <input
+                type="text"
+                class="resources_search-input"
+                placeholder="Search..."
+              />
             </div>
-            <div class="notification_password">
-              <!-- Notification -->
+          </div>
+          <!-- блок два початок -->
+          <div class="custom_block">
+            <p class="text_left">First text</p>
+            <div class="right_group">
+              <button class="add_button" aria-label="Add folder">
+                <svg class="custom_icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-plus"></use>
+                </svg>
+              </button>
+              <p class="text_right">Add folder</p>
+              <button class="arrow_left">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="arrow_right">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- блок два кінець -->
 
-              <div class="notification_settings">
-                <h3 class="section_title">
-                  <span class="highlight">Notification</span>
-                </h3>
-                <div class="toggle_div_all">
-                  <div class="toggle_div">
-                    <label class="toggle">
-                      <input type="checkbox" checked />
-                      <span class="slider"></span>
-                      <span class="label_text">Timer</span>
-                    </label>
-                  </div>
-                  <div class="toggle_div">
-                    <label class="toggle">
-                      <input type="checkbox" />
-                      <span class="slider"></span>
-                      <span class="label_text">Task Update</span>
-                    </label>
-                  </div>
-                  <div class="toggle_div">
-                    <label class="toggle">
-                      <input type="checkbox" checked />
-                      <span class="slider"></span>
-                      <span class="label_text">Task Deadline</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <!-- Notification кінець -->
+          <!-- фото частина початок -->
+          <div class="cards_wrapper">
+            <div class="custom_card">
+              <div class="background_block"></div>
+              <div class="photo_block"></div>
+              <div class="overlay_block"></div>
 
-              <!-- Password -->
-              <div class="password_settings">
-                <h3 class="section_title section_title_password">Password</h3>
-                <label class="left_settings_label right_settings_label_one"
-                  >Old password</label
-                >
-                <div class="input_group">
-                  <svg class="input_icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-Vector-5"></use>
-                  </svg>
-                  <input
-                    class="right_input"
-                    type="password"
-                    placeholder="Password"
-                  />
-                </div>
-                <label class="left_settings_label right_settings_label_one"
-                  >New password</label
-                >
-                <div class="input_group">
-                  <svg class="input_icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-Vector-5"></use>
-                  </svg>
-                  <input
-                    class="right_input"
-                    type="password"
-                    placeholder="New password"
-                  />
-                </div>
-              </div>
-              <!-- Password кінець -->
-            </div>
-          </div>
-          <!-- Personal Info на всю ширину -->
-          <div class="personal_info">
-            <h3 class="personal_info-h">Personal info</h3>
-            <div class="form_group_all_one">
-              <div class="form_group">
-                <label class="personal_info_label">First name</label>
-                <input class="personal_info_input" type="text" value="Oliva" />
-              </div>
-              <div class="form_group">
-                <label class="personal_info_label">Email</label>
-                <input
-                  class="personal_info_input"
-                  type="email"
-                  value="olivia@untitledui.com"
-                />
-              </div>
-            </div>
-            <div class="img_and_upload">
-              <!-- іконка -->
-              <div class="upload_icon-footer">
-                <img
-                  class="upload_icon upload_icon_footer"
-                  src="./images/Avatar.png"
-                  srcset="./images/Avatar.png 1x, ./images/Avatar2x.png 2x"
-                  alt="Upload"
-                />
-              </div>
-              <!-- іконка кінець -->
-              <div class="form_group upload_box">
-                <button class="topbar_button_footer">
-                  <svg class="social-icon-menu_footer" width="25" height="25">
-                    <use href="./images/icons.svg#icon-upload-cloud"></use>
-                  </svg>
-                </button>
-                <p class="personal_info_p_box">
-                  <span class="personal_info-p_strong">Click to upload</span>
-                  or drag and drop SVG, PNG, JPG or GIF (max. 800x400px)
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Personal Info на всю ширину кінець -->
+              <!-- Основна іконка зі спрайту -->
+              <svg class="main_icon" width="70" height="35">
+                <use
+                  class="use_1"
+                  href="./images/icons.svg#icon-Rectangle-4141"
+                ></use>
+              </svg>
 
-          <!-- кнопки початок -->
-          <div class="buttons">
-            <button class="button_footer cancel">Cancel</button>
-            <button class="button_footer save">Save Changes</button>
+              <!-- Текст поверх іконки -->
+              <span class="icon_text">Q&A</span>
+
+              <!-- Хрестик зі спрайту -->
+              <svg class="hover_button" width="13" height="13">
+                <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
+              </svg>
+            </div>
+
+            <div class="custom_card">
+              <div class="background_block"></div>
+              <div class="photo_block"></div>
+              <div class="overlay_block"></div>
+
+              <svg class="main_icon" width="70" height="35">
+                <use
+                  class="use_1"
+                  href="./images/icons.svg#icon-Rectangle-4141"
+                ></use>
+              </svg>
+
+              <span class="icon_text">Design</span>
+
+              <svg class="hover_button" width="13" height="13">
+                <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
+              </svg>
+            </div>
+
+            <div class="custom_card">
+              <div class="background_block"></div>
+              <div class="photo_block"></div>
+              <div class="overlay_block"></div>
+
+              <svg class="main_icon" width="70" height="35">
+                <use
+                  class="use_1"
+                  href="./images/icons.svg#icon-Rectangle-4141"
+                ></use>
+              </svg>
+
+              <span class="icon_text">Developer</span>
+
+              <svg class="hover_button" width="13" height="13">
+                <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
+              </svg>
+            </div>
+
+            <div class="custom_card">
+              <div class="background_block"></div>
+              <div class="photo_block"></div>
+              <div class="overlay_block"></div>
+
+              <svg class="main_icon" width="70" height="35">
+                <use
+                  class="use_1"
+                  href="./images/icons.svg#icon-Rectangle-4141"
+                ></use>
+              </svg>
+
+              <span class="icon_text">HTML</span>
+
+              <svg class="hover_button" width="13" height="13">
+                <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
+              </svg>
+            </div>
           </div>
-          <!-- кнопки кінець -->
+
+          <!-- фото частина кінець -->
+          <!-- нижня частина початок -->
+          <div class="bar">
+            <h2 class="bar_title">All Files</h2>
+
+            <button class="bar_btn">
+              <svg class="bar_icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-plus"></use>
+              </svg>
+              Add resources
+            </button>
+          </div>
+
+          <!-- нижня частина кінець -->
         </div>
       </section>
     </main>

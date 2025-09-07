@@ -116,649 +116,323 @@ section {
   flex-direction: column;
   gap: 20px;
   text-align: left;
+  align-items: center;
 }
 
-.h_p {
+/* хедер початок */
+.button_button_img {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
-.settings_h {
+.topbar_button {
+  border-radius: 50px;
+  width: 34px;
+  height: 34px;
+}
+
+.topbar_button_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+}
+
+.social_icon_menu_b {
+  stroke-width: 2px;
+  stroke: #000;
+}
+
+/* хедер кінець */
+
+.resources_a {
   position: relative;
   display: inline-block;
-  padding-left: 20px; /* місце для стрілки */
-  font-size: 20px;
+  padding-left: 40px; /* місце під стрілку */
+  font-size: 24px;
   font-weight: 600;
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 29px;
-  color: #1f2937;
   font-family: "Nunito", sans-serif;
-  width: 120px;
+  color: #1f2937;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 
-.settings_h::before {
-  content: "<"; /* можна замінити на "←" для красивішої стрілки */
+.resources_a::before {
+  content: "<"; /* або "<" якщо хочете просту */
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+  font-size: 18px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1;
+  font-weight: 590;
+  font-size: 14px;
+  line-height: 1.29412;
+  text-align: center;
   color: #65676a;
 }
 
-.settings_p {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33333;
-  color: #717680;
-  font-family: "Inter", sans-serif;
-}
-
-.left_settings_h {
-  font-weight: 500;
-  font-size: 22px;
-  text-align: center;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-  margin-bottom: 16px;
-}
-
-.form_group_zone_one {
+.resources_search {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 15px;
+  background: rgba(190, 190, 226, 0.2);
+  padding: 0 8px;
+  width: 352px;
+  height: 31px;
+  gap: 8px; /* відстань між іконкою та інпутом */
 }
 
-.left_settings_label {
+.resources_search-icon {
+  fill: #6b7280;
+  flex-shrink: 0; /* іконка не стискається */
+}
+
+.resources_search-input {
+  flex: 1; /* інпут займає залишок місця */
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  height: 100%;
   font-weight: 500;
   font-size: 16px;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-}
-
-.form-group-zone {
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: -0.02em;
+  text-align: center;
   color: #717680;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 16px 20px;
-  width: 350px;
-  height: 50px;
-  background-color: #f9fafb;
 }
 
-.form_group_zone_one_all {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-/* стилі для стрілочки селекту */
-.form_group_zone,
-.form_group_select {
-  appearance: none; /* прибирає стандартну стрілку */
-  -webkit-appearance: none; /* для Safari/Chrome */
-  -moz-appearance: none; /* для Firefox */
-
-  background: #f9fafb url("./images/Arrow_Down.svg") no-repeat right 20px center;
-  background-size: 16px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 16px 40px 16px 20px; /* відступ справа під стрілку */
-  width: 100%;
-  height: 50px;
-  font-size: 14px;
-  /* color: #1f2937; */
-  cursor: pointer;
-}
-/* стилі для стрілочки селекту кінець */
-
-.form_group_button_svg {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-}
-
-.form_group_button {
-  background-color: transparent;
-}
-
-.form_group_svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form_group {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.form_inline {
+/* блок два початок */
+.custom_block {
   display: flex;
   justify-content: space-between;
 }
 
-.form_group_select {
+.text_left {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1f2937;
+  font-family: "Inter", sans-serif;
+  margin-right: 64px;
+  /* margin-right: 2px; */
+}
+
+.custom_icon {
+  fill: #6b7280;
+  flex-shrink: 0;
+}
+
+.text_right {
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: -0.02em;
-  color: #1f2937;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  border: 1px solid #6c63ff;
-  border-radius: 10px;
-  padding: 16px 20px;
-  width: 184px;
-  height: 50px;
-  background-color: #f9fafb;
-}
-
-/* Notification початок */
-
-.section_title {
-  font-weight: 500;
-  font-size: 22px;
-  text-align: center;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-  margin-bottom: 38px;
-  margin-top: 20px;
-}
-
-.label_text {
-  font-weight: 500;
-  font-size: 16px;
-  color: #717680;
-  font-family: "Inter", sans-serif;
-}
-
-.toggle_div_all {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.toggle {
-  display: flex;
-  align-items: center;
-}
-
-.toggle input {
-  display: none;
-}
-
-.slider {
-  position: relative;
-  width: 40px;
-  height: 20px;
-  background-color: #f9fafb;
-  border-radius: 34px;
-  transition: 0.3s;
-  border: 1px solid #e5e7eb;
-}
-
-/* початковий стан — сірий */
-.slider::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background-color: #ccc; /* сірий */
-  transition: 0.3s;
-}
-
-/* коли включено — синій */
-.toggle input:checked + .slider::before {
-  background-color: #7b5cff; /* синій */
-  transform: translate(20px, -50%);
-}
-
-/* коли включено */
-.toggle input:checked + .slider {
-  background-color: #f9fafb; /* фон треку */
-}
-
-.toggle input:checked + .slider::before {
-  transform: translate(20px, -50%); /* вправо + по центру */
-}
-
-.right_settings_label_one {
-  margin-bottom: 16px;
-}
-
-.label_text {
-  font-weight: 500;
-  font-size: 16px;
-  color: #717680;
-  transition: color 0.3s;
-}
-
-/* Коли input включений, змінюємо колір тексту */
-.toggle input:checked ~ .label_text {
-  color: #1f2937;
-}
-/* Notification кінець */
-
-/* <!-- Password --> початок */
-
-.section_title_password {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 22px;
-  text-align: center;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-  width: 120px;
-}
-
-.password_settings {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.right_settings_label_one {
-  margin-bottom: 0;
-}
-
-.input_group {
-  position: relative;
-  max-width: 400px;
-  margin-bottom: 16px;
-}
-
-.input_group svg {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  fill: #9ca3af; /* сірий для іконки */
-  pointer-events: none; /* щоб не заважала клікам */
-}
-
-.input_group input {
-  width: 320px;
-  /* width: 100%; */
-  height: 50px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  padding: 0 16px 0 44px; /* відступ зліва під іконку */
-  background-color: #f9fafb;
-  font-size: 14px;
-  color: #1f2937;
-}
-
-.input_icon {
-  margin-right: 10px;
-  fill: #666;
-}
-/* <!-- Password --> кінець */
-
-/* <!-- Personal Info початок --> */
-.personal_info-h {
-  font-weight: 500;
-  font-size: 22px;
-  text-align: left;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-}
-
-.personal_info_label {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-}
-
-.personal_info_input {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #1f2937;
-  font-family: "Inter", sans-serif;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 10px 14px;
-  width: 358px;
-  height: 44px;
-}
-
-.form_group.upload_box {
-  width: 90%;
-  height: 126px;
-  border: 2px dashed #ccc;
-  border-radius: 10px;
-  padding: 16px;
-  background-color: #f9fafb;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  transition: border-color 0.3s, background-color 0.3s;
-}
-
-.form_group.upload_box:hover {
-  border-color: #6c63ff;
-  background-color: #f0f0ff;
-}
-
-.upload_icon {
-  width: 32px; /* можна змінити розмір іконки */
-  height: 32px;
-  object-fit: contain;
-}
-
-.personal_info_p_box {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #717680;
-  font-family: "Inter", sans-serif;
-  text-align: center; /* текст по центру */
-  margin: 0;
-  width: 280px;
-  margin-top: 12px;
-}
-
-.personal_info-p_strong {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.33333;
   color: #6c63ff;
   font-family: "Inter", sans-serif;
 }
 
-.upload_icon-footer {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-
-  padding: 24px 0px 20px 0px;
+.custom_icon {
+  fill: #6c63ff;
+  stroke-width: 1px;
+  stroke: #6c63ff;
 }
 
-.upload_icon_footer {
-  width: 64px;
-  height: 64px;
-}
-
-.topbar_button_footer {
+.right_group {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 6px solid #e5e7eb;
-  border-radius: 28px;
-  width: 40px;
-  height: 40px;
-  background-color: #e5e7eb;
+  gap: 10px;
 }
 
-.social-icon-menu_footer {
+.arrow_right,
+.arrow_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
   fill: transparent;
-  stroke-width: 1.67px;
+  stroke-width: 1.5px;
   stroke: #717680;
 }
-/* <!-- Personal Info кінець --> */
 
-/* кнопки початок */
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* Hover ефект */
+.arrow_left:hover svg,
+.arrow_right:hover svg {
+  stroke: #1f2937;
 }
 
-.button_footer {
-  border: 1.75px solid #6c63ff;
-  border-radius: 4px;
-  padding: 6px 22px;
-  width: 164px;
-  height: 38px;
-  font-weight: 500;
-  font-size: 13px;
-  text-align: center;
-  color: #1f2937;
+.add_button {
+  background-color: transparent;
 }
 
-.button_footer:hover {
-  font-weight: 500;
-  font-size: 13px;
-  text-align: center;
-  color: #f9fafb;
-  border-radius: 4px;
-  padding: 6px 22px;
-  width: 164px;
-  height: 38px;
-  background-color: #6c63ff;
-}
-/* кнопки кінець */
+/* блок два кінець */
 
-/* Базовий стиль для всіх потрібних заголовків */
-.settings_h,
-.section_title,
-.section_title_password,
-.personal_info-h {
+/* фото блок початок */
+.custom_card {
   position: relative;
-  display: inline-block; /* щоб underline був під словом */
-  font-weight: 600;
-  font-family: "Nunito", sans-serif;
-  color: #1f2937;
-  text-decoration: none;
+  width: 120px;
+  height: 130px;
+  cursor: pointer;
 }
 
-/* Псевдоелемент для синьої "стрілки" */
-.settings_h::after,
-.section_title::after,
-.section_title_password::after,
-.personal_info-h::after {
-  content: "";
+/* Фон-блок */
+.background_block {
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: -2px; /* відстань під словом */
-  width: 100%;
-  height: 3px;
-  background: #3b82f6; /* синій колір (tailwind blue-500) */
-  border-radius: 2px;
+  width: 120px;
+  height: 130px;
+  background: #6c63ff;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  z-index: 1;
 }
 
-/* ---------- Планшет ---------- */
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-    padding: 0 24px;
-  }
-
-  .my {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .h_p {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    min-width: 720px;
-    margin-right: auto;
-    /* padding: 15px; */
-  }
-
-  .left_right {
-    display: flex;
-    width: 720px;
-  }
-
-  .notification_password {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 10px;
-  }
-
-  .password_settings {
-    width: 350px;
-  }
-
-  .input_group input {
-    width: 70%;
-  }
-
-  .form_inline {
-    justify-content: center;
-    flex-direction: row;
-    gap: 5px;
-    /* margin-bottom: 20px; */
-  }
-
-  .left_settings {
-    width: 373px;
-  }
-
-  .left_settings {
-    padding: 10px;
-  }
-
-  .form_group_all_one {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-bottom: 20px;
-  }
-
-  .img_and_upload {
-    display: flex;
-    gap: 20px;
-  }
-
-  .personal_info_input {
-    width: 320px;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: flex-end; /* вирівнює вправо */
-    gap: 20px;
-    width: 100%; /* щоб займати всю ширину контейнера */
-  }
-
-  .personal_info-h {
-    text-align: left;
-  }
-
-  .section_title {
-    margin-top: 0px;
-  }
+.use_2 {
+  stroke-width: 0.42px;
+  stroke: #1f2937;
 }
 
-/* ---------- Десктоп ---------- */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-    padding: 0 32px;
-  }
-
-  .settings_h {
-    font-weight: 500;
-  }
-
-  .settings_p {
-    font-size: 16px;
-  }
-
-  .form_group_zone {
-    font-weight: 500;
-    font-size: 12px;
-    letter-spacing: -0.02em;
-    color: #717680;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    /* margin-bottom: 20px; */
-  }
-
-  .left_right {
-    justify-content: center;
-    gap: 24px;
-    min-width: 1140px;
-  }
-
-  .left_settings {
-    width: 570px;
-    /* padding: 15px; */
-    padding: 0px;
-  }
-
-  .notification_password {
-    width: 570px;
-    padding: 15px;
-    padding: 0px;
-  }
-
-  .input_group input {
-    width: 100%;
-  }
-
-  .right_input {
-    width: 400px;
-  }
-
-  .form_inline {
-    justify-content: flex-start;
-  }
-
-  .form_group_all_one {
-    min-width: 1140px;
-    /* padding: 15px; */
-  }
-
-  /* .personal_info-h {
-    padding: 15px;
-  } */
-
-  .settings_container {
-    width: 570px;
-    /* padding: 15px; */
-  }
-
-  .personal_info_input {
-    min-width: 514px;
-  }
-
-  .upload_icon-footer {
-    padding: 0px;
-  }
-
-  .form_group.upload_box {
-    width: 80%;
-  }
-
-  .settings_h {
-    padding-left: 0; /* прибираємо відступ */
-  }
-
-  .settings_h::before {
-    content: none;
-  }
-
-  .topbar_button_2 {
-    display: none;
-  }
+/* Малий фото-блок */
+.photo_block {
+  position: absolute;
+  top: 20px;
+  left: 17px;
+  width: 86px;
+  height: 90px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  z-index: 2;
 }
+
+/* Прозорий overlay */
+.overlay_block {
+  position: absolute;
+  top: 15px; /* ховаємо верхню частину */
+  left: 20px;
+  width: 86px;
+  height: 90px;
+  background: rgba(252, 252, 255, 0.7);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  transform: rotate(10deg);
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.custom_card:hover .overlay_block {
+  top: 30px; /* опускається на місце */
+  transform: rotate(5deg) translateX(5px); /* і трохи виїжджає вправо */
+}
+
+/* Основна іконка зі спрайту */
+.main_icon {
+  position: absolute;
+  top: 53px;
+  left: 0px;
+  width: 121px;
+  height: 80px;
+  fill: #e5e7eb; /* початковий колір */
+  box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: fill 0.3s;
+  z-index: 4;
+}
+
+/* Hover - змінюємо колір */
+.custom_card:hover .main_icon {
+  fill: #00bfa6;
+}
+
+/* Хрестик зі спрайту */
+.hover_button {
+  position: absolute;
+  top: 80px;
+  left: 100px; /* підкоригувати під дизайн */
+  z-index: 5;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Показати при hover */
+.custom_card:hover .hover_button {
+  opacity: 1;
+}
+
+.icon_text {
+  position: absolute;
+  top: 95px; /* регулюй вертикальне вирівнювання */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: 500;
+  color: #1f2937;
+  pointer-events: none; /* щоб текст не заважав клікам по іконці */
+  z-index: 6; /* вище ніж .main_icon */
+}
+
+.cards_wrapper {
+  display: grid;
+  /* align-items: center; */
+  grid-template-columns: repeat(2, 1fr); /* 2 в ряд */
+  column-gap: 71px; /* горизонтальний відступ */
+  row-gap: 19px; /* вертикальний відступ */
+  max-width: 300px; /* щоб 2 вміщались по ширині */
+}
+
+.icon_text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1f2937;
+  font-family: "Nunito", sans-serif;
+}
+
+.custom_card:hover .icon_text {
+  color: #1f2937; /* новий колір при hover */
+}
+/* фото блок кінець */
+
+/* нижня частина початок */
+.bar {
+  display: flex;
+  justify-content: center;
+  gap: 148px;
+  align-items: center;
+  /* padding: 12px 16px; */
+  background: #fff;
+}
+
+.bar_title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.bar_btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  /* border: 1px solid #6c63ff; */
+  background: transparent;
+  border-radius: 6px;
+  /* padding: 6px 12px; */
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c63ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bar_btn:hover {
+  background: #6c63ff;
+  color: #fff;
+}
+
+.bar_icon {
+  fill: currentColor; /* щоб мінявся разом з текстом */
+}
+
+/* нижня частина кінець */
