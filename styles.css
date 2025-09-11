@@ -417,6 +417,7 @@ section {
 
 /* таблиця початок */
 .table_container {
+  background-color: transparent;
   width: 100%;
   overflow-x: auto;
 }
@@ -446,7 +447,7 @@ table {
   padding: 14px 16px;
 }
 
-.menu-cell {
+.menu_cell {
   text-align: center;
   cursor: pointer;
   font-size: 18px;
@@ -455,6 +456,14 @@ table {
 
 .table_container_td_padingr {
   padding-right: 9px;
+}
+
+.table_container_td_svg {
+  display: none;
+}
+
+.table-cnt {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 /* Десктопна версія */
@@ -544,7 +553,7 @@ table {
     width: 100%; /* таблиця займає всю ширину контейнера */
   }
 
-  .use_1 {
+  /* .use_1 {
     width: 221px;
   }
 
@@ -560,7 +569,7 @@ table {
     width: 100%;
     height: 100%;
     display: block;
-  }
+  } */
 
   .desktop {
     display: block;
@@ -579,9 +588,65 @@ table {
     font-size: 12px;
     line-height: 1.3;
     color: #717680;
+    padding: 10px 12px;
   }
 
   .table_container_td {
     font-size: 12px;
+    padding: 10px 12px;
+  }
+
+  .menu_cell {
+    display: none;
+  }
+
+  .table_container_td_svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .social_icon_menu_td {
+    stroke-width: 2px;
+    stroke: #6c63ff;
+    fill: transparent;
+  }
+
+  .social_icon_menu-td_two {
+    fill: #6c63ff;
+    padding: 4px 6px;
+  }
+
+  .hover_button {
+    top: 130px;
+    left: 190px;
+  }
+
+  .use_2 {
+    display: block; /* прибирає зайвий прозорий блок */
+    transform: scale(2); /* збільшення іконки в 2 рази */
+    transform-origin: center center; /* масштабування від центру */
+  }
+
+  .icon_text {
+    top: 160px;
+    left: 90%;
+    font-weight: 600;
+    font-size: 34px;
+  }
+
+  /* Контейнер SVG для десктопної іконки */
+  .main_icon.desktop {
+    overflow: visible; /* дозволяє збільшеній іконці виходити за межі SVG */
+    display: inline-block; /* або block, залежно від верстки */
+    margin-top: 34px;
+  }
+
+  /* Сам `<use>` з класом use-d */
+  .use-d {
+    display: block; /* прибирає зайвий прозорий блок */
+    transform: scale(1.85) translate(22%, 20%); /* 2× збільшення і зсув вниз на 20% */
+    transform-origin: center center; /* центр масштабування */
   }
 }

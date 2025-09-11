@@ -129,7 +129,7 @@
           </div>
           <!-- блок два початок -->
           <div class="custom_block">
-            <p class="text_left">First text</p>
+            <p class="text_left">Quick Access</p>
             <div class="right_group">
               <button class="add_button" aria-label="Add folder">
                 <svg class="custom_icon" width="18" height="18">
@@ -158,11 +158,16 @@
               <div class="photo_block"></div>
               <div class="overlay_block"></div>
 
-              <!-- Основна іконка зі спрайту -->
-              <svg class="main_icon" width="70" height="35">
+              <!-- Основна іконка для мобільних -->
+              <svg class="main_icon mobile" width="70" height="35">
+                <use href="./images/icons.svg#icon-Rectangle-4141"></use>
+              </svg>
+
+              <!-- Основна іконка для десктопів -->
+              <svg class="main_icon desktop" width="221" height="144">
                 <use
-                  class="use_1"
-                  href="./images/icons.svg#icon-Rectangle-4141"
+                  class="use-d"
+                  href="./images/icons.svg#icon-Rectangle-4141-2"
                 ></use>
               </svg>
 
@@ -180,20 +185,23 @@
               <div class="photo_block"></div>
               <div class="overlay_block"></div>
 
-              <!-- SVG для мобільних -->
-              <svg class="main_icon mobile">
-                <use href="./images/icons.svg#icon-mobile"></use>
+              <!-- Основна іконка для мобільних -->
+              <svg class="main_icon mobile" width="70" height="35">
+                <use href="./images/icons.svg#icon-Rectangle-4141"></use>
               </svg>
 
-              <!-- SVG для десктопів -->
-              <svg class="main_icon desktop">
+              <!-- Основна іконка для десктопів -->
+              <svg class="main_icon desktop" width="221" height="144">
                 <use
-                  href="./images/icons.svg#icon-Rectangle-4141_deskopt"
+                  class="use-d"
+                  href="./images/icons.svg#icon-Rectangle-4141-2"
                 ></use>
               </svg>
 
+              <!-- Текст поверх іконки -->
               <span class="icon_text">Design</span>
 
+              <!-- Хрестик зі спрайту -->
               <svg class="hover_button" width="13" height="13">
                 <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
               </svg>
@@ -204,20 +212,23 @@
               <div class="photo_block"></div>
               <div class="overlay_block"></div>
 
-              <!-- SVG для мобільних -->
-              <svg class="main_icon mobile">
-                <use href="./images/icons.svg#icon-mobile"></use>
+              <!-- Основна іконка для мобільних -->
+              <svg class="main_icon mobile" width="70" height="35">
+                <use href="./images/icons.svg#icon-Rectangle-4141"></use>
               </svg>
 
-              <!-- SVG для десктопів -->
-              <svg class="main_icon desktop">
+              <!-- Основна іконка для десктопів -->
+              <svg class="main_icon desktop" width="221" height="144">
                 <use
-                  href="./images/icons.svg#icon-Rectangle-4141_deskopt"
+                  class="use-d"
+                  href="./images/icons.svg#icon-Rectangle-4141-2"
                 ></use>
               </svg>
 
+              <!-- Текст поверх іконки -->
               <span class="icon_text">Developer</span>
 
+              <!-- Хрестик зі спрайту -->
               <svg class="hover_button" width="13" height="13">
                 <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
               </svg>
@@ -228,20 +239,23 @@
               <div class="photo_block"></div>
               <div class="overlay_block"></div>
 
-              <!-- SVG для мобільних -->
-              <svg class="main_icon mobile">
-                <use href="./images/icons.svg#icon-mobile"></use>
+              <!-- Основна іконка для мобільних -->
+              <svg class="main_icon mobile" width="70" height="35">
+                <use href="./images/icons.svg#icon-Rectangle-4141"></use>
               </svg>
 
-              <!-- SVG для десктопів -->
-              <svg class="main_icon desktop">
+              <!-- Основна іконка для десктопів -->
+              <svg class="main_icon desktop" width="221" height="144">
                 <use
-                  href="./images/icons.svg#icon-Rectangle-4141_deskopt"
+                  class="use-d"
+                  href="./images/icons.svg#icon-Rectangle-4141-2"
                 ></use>
               </svg>
 
+              <!-- Текст поверх іконки -->
               <span class="icon_text">HTML</span>
 
+              <!-- Хрестик зі спрайту -->
               <svg class="hover_button" width="13" height="13">
                 <use class="use_2" href="./images/icons.svg#icon-x-1"></use>
               </svg>
@@ -265,7 +279,7 @@
 
           <!-- таблиця початок -->
           <div class="table_container">
-            <table>
+            <table class="table-cnt">
               <thead>
                 <tr>
                   <th class="table_container_th">Name</th>
@@ -282,7 +296,15 @@
                   <td class="table_container_td table_container_td_padingr">
                     Gallery of design projects
                   </td>
-                  <td class="table_container_td menu-cell">⋮</td>
+                  <td class="table_container_td menu_cell">⋮</td>
+                  <td class="table_container_td table_container_td_svg">
+                    <svg class="social_icon_menu_td" width="33" height="31">
+                      <use href="./images/icons.svg#icon-Group-5"></use>
+                    </svg>
+                    <svg class="social_icon_menu-td_two" width="24" height="28">
+                      <use href="./images/icons.svg#icon-Vector-9"></use>
+                    </svg>
+                  </td>
                 </tr>
                 <tr>
                   <td class="table_container_td">Dribbble</td>
@@ -291,16 +313,32 @@
                   <td class="table_container_td table_container_td_padingr">
                     UI/UX inspiration
                   </td>
-                  <td class="table_container_td menu-cell">⋮</td>
+                  <td class="table_container_td menu_cell">⋮</td>
+                  <td class="table_container_td table_container_td_svg">
+                    <svg class="social_icon_menu_td" width="33" height="31">
+                      <use href="./images/icons.svg#icon-Group-5"></use>
+                    </svg>
+                    <svg class="social_icon_menu-td_two" width="24" height="28">
+                      <use href="./images/icons.svg#icon-Vector-9"></use>
+                    </svg>
+                  </td>
                 </tr>
                 <tr>
-                  <td class="table_container_td"><b>Flaticon</b></td>
+                  <td class="table_container_td">Flaticon</td>
                   <td class="table_container_td">flaticon.com</td>
                   <td class="table_container_td">29.08.2025</td>
                   <td class="table_container_td table_container_td_padingr">
                     Free icons
                   </td>
-                  <td class="table_container_td menu-cell">⋮</td>
+                  <td class="table_container_td menu_cell">⋮</td>
+                  <td class="table_container_td table_container_td_svg">
+                    <svg class="social_icon_menu_td" width="33" height="31">
+                      <use href="./images/icons.svg#icon-Group-5"></use>
+                    </svg>
+                    <svg class="social_icon_menu-td_two" width="24" height="28">
+                      <use href="./images/icons.svg#icon-Vector-9"></use>
+                    </svg>
+                  </td>
                 </tr>
                 <tr>
                   <td class="table_container_td">Icons8</td>
@@ -309,7 +347,15 @@
                   <td class="table_container_td table_container_td_padingr">
                     Icons and illustrations
                   </td>
-                  <td class="table_container_td menu-cell">⋮</td>
+                  <td class="table_container_td menu_cell">⋮</td>
+                  <td class="table_container_td table_container_td_svg">
+                    <svg class="social_icon_menu_td" width="33" height="31">
+                      <use href="./images/icons.svg#icon-Group-5"></use>
+                    </svg>
+                    <svg class="social_icon_menu-td_two" width="24" height="28">
+                      <use href="./images/icons.svg#icon-Vector-9"></use>
+                    </svg>
+                  </td>
                 </tr>
               </tbody>
             </table>
